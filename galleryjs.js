@@ -23,7 +23,7 @@
         
         { 'name' : "Tiny Planets",
          'tbimage' : "thumbnails/nothersunset2.jpg",
-         'image' : "Photography/smallpans/nothersunset2.jpg",
+         'image' : "images/nothersunset2.jpg",
          'description' : "One of latest in a series of panorama edits that started as a first year digital imaging project. I've continued to create them over the years and enjoy finding new locations to work with, especially the Northern Irish north coast. To see the rest of this series " + '<a href="tiny_planet_gallery.html">click here.</a>',
          'year' : "2015"
         },
@@ -81,15 +81,15 @@ for (var i = 0; i < works.length; i++) {
     imageholder.className = "six columns imageholder";
   var thumbnail = document.createElement("img");
     thumbnail.className = "thumbnail";
-    thumbnail.setAttribute('style', 'background-image:url(\"' + works[i].tbimage + '\");');
+    thumbnail.style.backgroundImage='url('+works[i].tbimage+')';
+    thumbnail.style.backgroundPosition='center';
     thumbnail.setAttribute('href', works[i].tbimage);
     thumbnail.setAttribute('content', works[i].tbimage);
-    $(thumbnail).attr('data-worksnumber', i); 
-    $(' .thumbnail').css( 'background-position' , 'center' );
+    thumbnail.setAttribute('data-worksnumber', i); 
     var content = document.createElement("div");
     content.className = "holdercontent a";
-    $(content).attr('data-worksnumber', i);
-    $(content).text(works[i].name);
+    content.setAttribute('data-worksnumber', i); 
+    $(content).text(works[i].name); ///innerHTML ???
     
     imageholder.appendChild(content);
     imageholder.appendChild(thumbnail);
@@ -105,11 +105,13 @@ $(document).ready(function(){
   var imgpage = document.getElementById("imgpage")
     $(".thumbnail, .holdercontent").click(function(){
         var THISNUMBERBETTERWORK = $(this).data("worksnumber");
-        $(imgpage).css('display', 'block');
-        $(imgpage).css('opacity','0');
+        imgpage.style.cssText += "display:block;opacity:0;";
         $(imgpage).fadeIn(250).css({"opacity":1}); 150;
-        $(".container").css('-webkit-filter','blur(3px)');
-        $(".container").css('filter','blur(3px)');
+        var containerstyle = document.getElementsByClassName("container")
+        var i;
+        for (i = 0; i < containerstyle.length; i++) {
+        containerstyle[i].style.cssText += "-webkit-filter:blur(3px);filter:blur(3px);"
+        };
     var fullimage = document.createElement("div");
         fullimage.className = "full_image";
         imgpage.appendChild(fullimage);
