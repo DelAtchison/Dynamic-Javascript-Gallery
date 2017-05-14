@@ -73,45 +73,45 @@
         
     ];
     
-function showgallery(){
-var gallery = document.getElementById("gallery");
-
-for (var i = 0; i < works.length; i++) {
-  var imageholder = document.createElement("div");
-    imageholder.className = "six columns imageholder";
-  var thumbnail = document.createElement("img");
-    thumbnail.className = "thumbnail";
-    thumbnail.style.backgroundImage='url('+works[i].tbimage+')';
-    thumbnail.style.backgroundPosition='center';
-    thumbnail.setAttribute('href', works[i].tbimage);
-    thumbnail.setAttribute('content', works[i].tbimage);
-    thumbnail.setAttribute('data-worksnumber', i); 
-    var content = document.createElement("div");
-    content.className = "holdercontent a";
-    content.setAttribute('data-worksnumber', i); 
-    $(content).text(works[i].name); ///innerHTML ???
+    var gallery = document.getElementById("gallery");
     
-    imageholder.appendChild(content);
-    imageholder.appendChild(thumbnail);
-    gallery.appendChild(imageholder);
+    function showGallery() {
+            for (var i = 0; i < works.length; i++) {
+        var imageholder = document.createElement("div");
+        var thumbnail = document.createElement("img");       
+        var content = document.createElement("div");
+        imageholder.className = "six columns imageholder";
+        thumbnail.className = "thumbnail";
+        thumbnail.style.backgroundImage='url('+works[i].tbimage+')';
+        thumbnail.style.backgroundPosition='center';
+        thumbnail.setAttribute('href', works[i].tbimage);
+        thumbnail.setAttribute('content', works[i].tbimage);
+        thumbnail.setAttribute('data-worksnumber', i); 
+        content.className = "holdercontent a";
+        content.setAttribute('data-worksnumber', i); 
+        content.innerHTML = works[i].name ;
+        imageholder.appendChild(content);
+        imageholder.appendChild(thumbnail);
+        gallery.appendChild(imageholder);
 
-                      };
-};
-showgallery();
-
+                          };
+                        };
+    
+    showGallery();
 
 function trygallery (){
-$(document).ready(function(){
+//$(document).ready(function(){
   var imgpage = document.getElementById("imgpage")
     $(".thumbnail, .holdercontent").click(function(){
         var THISNUMBERBETTERWORK = $(this).data("worksnumber");
         imgpage.style.cssText += "display:block;opacity:0;";
-        $(imgpage).fadeIn(250).css({"opacity":1}); 150;
+        //$(imgpage).fadeIn(250).css({"opacity":1}); 150;
+        imgpage.style.cssText += "opacity:1";
         var containerstyle = document.getElementsByClassName("container")
         var i;
-        for (i = 0; i < containerstyle.length; i++) {
-        containerstyle[i].style.cssText += "-webkit-filter:blur(3px);filter:blur(3px);"
-        };
+            for (i = 0; i < containerstyle.length; i++) {
+                containerstyle[i].style.cssText += "-webkit-filter:blur(3px);filter:blur(3px);"
+            };
     var fullimage = document.createElement("div");
         fullimage.className = "full_image";
         imgpage.appendChild(fullimage);
@@ -130,14 +130,14 @@ $(document).ready(function(){
     var thumbnailimage = document.getElementById('thumbnail');
     var blaaaaaa = $(this).data("worksnumber");
         fullimage.setAttribute('style' , 'background-image:url(\"'+ works[blaaaaaa].image + '\");');
-        $(titlebox).text( works[blaaaaaa].name );
-        $(datebox).text( works[blaaaaaa].year );
-        $(descriptionbox).html(works[blaaaaaa].description );
-        $("body").css('overflow','hidden');
+        titlebox.innerHTML= works[blaaaaaa].name ;
+        datebox.innerHTML= works[blaaaaaa].year;
+        descriptionbox.innerHTML=works[blaaaaaa].description ;
+        document.getElementsByTagName("body")[0].style.cssText += "overflow:hidden;";
        // $(".headernav").css('display','none');
-        console.log(THISNUMBERBETTERWORK);
+        //console.log(THISNUMBERBETTERWORK);
  
-    }); }); };
+    }); };//); };
 
 trygallery();     
     
