@@ -5,74 +5,53 @@ function Gallery() { //Everything goes in here to keep it tidy and avoid global 
 /* This is the entire Gallery entry for the site, it's all in here. All of it. Really */
         var works = [
 
-              { 'name' : "Sassy Birds Series",
-             'tbimage' : "thumbnails/sassybirbthumb.jpg",
-             'image' : "images/sassybirdspart1.jpg",
-             'description' : "A fun design project for my Redbubble store featuring some beloved garden birds. The series is planned to consist of 5 sassy birds, 2 of which are currently completed at present. Each image started off from traditional sketches and were completed in Photoshop as opposed to Illustrator to maintain the hand drawn but polished feel.",
-             'year' : "February 2017 - Ongoing"
+              { 'name' : "Bamboo",
+             'tbimage' : "thumbnails/bambooleaf.jpg",
+             'image' : "images/bambooleaf.jpg",
+             'description' : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec porttitor tellus. Nullam ultrices sit amet sapien sit amet sagittis. Ut sit amet consectetur nulla, a euismod magna. Sed eget blandit turpis. Vivamus facilisis et lacus nec pharetra. Phasellus ligula erat, viverra ut dui at, mattis ultricies felis. Nullam nulla ex, vestibulum sit amet tortor id, luctus fringilla neque. Cras dignissim varius aliquam. Fusce congue lacus sed pulvinar finibus. Ut finibus ex id nunc tristique ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed feugiat eleifend risus, non dignissim massa vestibulum eu. ",
+             'year' : "2012"
             },
 
-              { 'name' : "Rebecca Young",
-             'tbimage' : "thumbnails/RebeccaLogo.jpg",
-             'image' : "images/RebeccaLogo.jpg",
-             'description' : "A logo design created for a film maker and photographer created using a mix of traditional and digital media. The client wasn't initially sure what she wanted but after some discussion on her values and what she wanted to project with the logo, I was able to come up with an idea that met her requirements  (including her name, elements of nature and the colour green) while matching the visual style she wanted. Her portfolio is currently under construction but is availble "+ '<a href="http://www.rebecca-young.co.uk">here.</a>',
-             'year' : "July 2016" 
+              { 'name' : "Orange Sunsets",
+             'tbimage' : "thumbnails/orange.jpg",
+             'image' : "images/orange.jpg",
+             'description' : "Sed lacinia condimentum tellus, condimentum fermentum nisl convallis vitae. Praesent auctor, nisl eget tempus laoreet, elit nunc feugiat metus, id mollis nibh ligula at turpis. Mauris in sagittis sem. Curabitur porttitor id justo a suscipit. Curabitur sit amet finibus metus. Nulla mollis pharetra diam, et vulputate purus. Sed rutrum at dolor nec rhoncus. Proin vehicula ipsum tortor, ac sodales leo viverra nec. Quisque egestas sagittis hendrerit. Duis pretium mi fringilla felis tristique, non porttitor risus pretium. Cras accumsan leo augue, sit amet maximus ex euismod sed. Maecenas vitae risus dui. Suspendisse sit amet consequat nulla, nec commodo felis. ",
+             'year' : "2013" 
             },
 
-             { 'name' : "Anthology of Lilys'",
-             'tbimage' : "thumbnails/WebsiteDisplaythumb.jpg",
-             'image' : "images/WebsiteDisplay.jpg",
-             'description' : "A custom website portfolio build for a client who wanted a place to display their writing. The brief was to create a simple working portfolio to display poetry and short pieces of literature in a clean space with little to distract from the written content. The client also requested two accessibility features - the ability to enlarge and shrink the size of the text, and the ability to switch to white text on black. These were implemented using Javascript and Jquery. The site was build using Skeleton and SASS and includes a drop down menu and a javascript based system that allows the individual pieces to exist in their own page and pulled into others as required. This site should go live by July 2016.",
-             'year' : "June 2016"
+             { 'name' : "Pool Floats",
+             'tbimage' : "thumbnails/poolfloats.jpg",
+             'image' : "images/poolfloats.jpg",
+             'description' : "Nulla dignissim quis augue ut imperdiet. Ut eget cursus nulla. Sed ac hendrerit arcu, sit amet pretium justo. Cras vitae magna nec ligula blandit condimentum. Morbi porttitor, est quis egestas mollis, nunc justo accumsan lectus, id sollicitudin ipsum augue a turpis. Sed suscipit vulputate sagittis. Nunc ac rutrum erat. Integer nec velit mollis, dapibus mi nec, imperdiet arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam a mauris sed sem dignissim consectetur ac quis orci. Nulla faucibus elit vitae turpis vehicula, sit amet convallis magna hendrerit. ",
+             'year' : "2014"
             },
 
-            { 'name' : "Tiny Planets",
-             'tbimage' : "thumbnails/nothersunset2.jpg",
-             'image' : "images/nothersunset2.jpg",
-             'description' : "One of latest in a series of panorama edits that started as a first year digital imaging project. I've continued to create them over the years and enjoy finding new locations to work with, especially the Northern Irish north coast. To see the rest of this series " + '<a href="tiny_planet_gallery.html">click here.</a>',
+            { 'name' : "Red Leaves",
+             'tbimage' : "thumbnails/redleaf.jpg",
+             'image' : "images/redleaf.jpg",
+             'description' : "Vestibulum pretium mi ornare, posuere sem a, iaculis felis. Etiam accumsan tortor ut metus dignissim facilisis. Maecenas facilisis, tortor quis mollis viverra, ligula metus lacinia diam, vitae dapibus magna ligula vel arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras eget feugiat urna. Quisque fringilla tellus in magna lobortis consequat. Curabitur pharetra blandit convallis.",
+             'year' : "2012"
+            },
+
+            { 'name' : "Sleeping Ducks",
+             'tbimage' : "thumbnails/sleepingduckslie.jpg",
+             'image' : "images/sleepingduckslie.jpg",
+             'description' : "Quisque dictum, urna facilisis placerat egestas, sapien lacus volutpat arcu, ac molestie tellus ex in purus. Nulla lacinia semper ipsum, at vehicula nunc laoreet at. Vestibulum porta mi ac commodo tristique. Donec vitae quam dictum, semper nibh nec, porttitor metus. Sed condimentum, libero sed cursus euismod, eros diam tristique sapien, non imperdiet justo nisl non nisl. Curabitur ut mi vehicula, consequat eros quis, maximus diam. Praesent imperdiet sem a ex varius sagittis vitae ac felis. Fusce rutrum non quam at sollicitudin. Donec ultricies, neque non malesuada scelerisque, nunc ligula vestibulum ex, vitae gravida velit turpis nec ante. Phasellus gravida turpis non fermentum pharetra. Morbi eget luctus lorem. ",
+             'year' : "2014"
+            },
+
+            { 'name' : "Succulent 2",
+             'tbimage' : "thumbnails/succulent2_1920.jpg",
+             'image' : "images/succulent2_1920.jpg",
+             'description' : "Curabitur a justo ut nunc cursus sollicitudin ut ac ligula. Nullam fringilla in eros quis suscipit. Vestibulum a maximus lacus, a fermentum mi. Phasellus molestie dui in lectus pretium, non maximus diam dictum. Nunc dictum massa eget quam euismod, at facilisis urna finibus. Praesent ipsum turpis, dignissim nec erat at, varius auctor tortor. Maecenas maximus commodo enim ut iaculis. Nunc non mattis orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl elit, eleifend sed augue eget, sollicitudin pharetra ex. Maecenas suscipit ipsum sed nisi feugiat maximus. In hac habitasse platea dictumst. Praesent bibendum interdum metus a lacinia. Donec mollis dui non risus egestas aliquam. Nunc accumsan tempus justo, eu scelerisque orci porta ut. ",
              'year' : "2015"
             },
 
-            { 'name' : "Multifaceted",
-             'tbimage' : "thumbnails/crystalredweb.png",
-             'image' : "images/crystalredwebwhite.jpg",
-             'description' : "Personal rebranding project. I wanted a logo that stood out while reflecting my personal values in some way. The result was Multifaceted Design, reprepresented through a vibrant crystal design. As a creative I have many aspects to them, as does my work wherever possible, and I try to incorporate a vibrant range of eye catching colours in my work as well. I used colours picked from this to use in this very portfolio.",
-             'year' : "April 2016"
-            },
-
-            { 'name' : "NavSync",
-             'tbimage' : "thumbnails/syncplain.png",
-             'image' : "images/syncplain.jpg",
-             'description' : "An illustration created using Adobe Illustrator, for a jQuery Plugin that helps with navigation on a webpage. The initial brief was 'buttery smooth 60fps' however when suggested during inital stages of the project, the client prefered a play on words around the name. This resulted in the above design of navigation of a ships wheel and a sink. The client asked for seperate svg vector files so they could animate it on their site, as "+ '<a href="http://ryanpark.co.uk/navsync/">seen here.</a>',
-             'year' : "December 2015"
-            },
-
-             { 'name' : "ReGlitch",
-             'tbimage' : "thumbnails/ReGlitch6colour1.jpg",
-             'image' : "images/ReGlitch6colour.jpg",
-             'description' : "A custom digital painting of a clients World of Warcraft character. <br>This particular piece took around three weeks to complete in total and had a lot of challenging textures, intricate details and reflected light sources that I wanted to include without muddying the overall appearance of the painting. The final image was my largest painting at over 6500 pixels across.",
-             'year' : "October 2015"
-            },
-
-            { 'name' : "Stars",
-             'tbimage' : "thumbnails/typography.jpg",
-             'image' : "images/marilyn.png",
-             'description' : "A typography piece created in Adobe Illustrator using a Marilyn Monroe quote to practice and further develop my skills using the software, and with typography in general.",
-             'year' : "August 2015"
-            },
-
-            { 'name' : "Agent Of Agency",
-             'tbimage' : "images/agentofagencycover.jpg",
-             'image' : "images/agentofagencycover.jpg",
-             'description' : "A mock up of PC Game box art for my final year project Agent of Agency, a game that was built on the research and theory of my written dissertation. On the whole that project involved coding, character design, artwork, animation and story writing. " + '<a href="agentofagency.html">More information on this project here.</a>',
-           'year' : "March 2015"
-            },
-
-            { 'name' : "St. Columb's Park House",
-             'tbimage' : "thumbnails/StColumbslogo.png",
-             'image' : "images/StColumbslogo2.png",
-             'description' : "A logo designed as part of a rebranding project for St. Columb's Park House in Derry/Londonderry as part of a final year group project. The concept was a medley of ideas that myself and the rest of the group that met the brief and the final design was illustrated by me. The House wanted a logo that would appeal to a younger demographic and represent more of the visitors to the park. This design was decided upon as the swings represented the two childrens parks, the dog represented all the dog walkers that used the park for leisure, St. Columb represented the heritage of the house and the oak tree represented the oak trees the park and Derry/Londonderry is well known for.",
-             'year' : "February 2015"
+             { 'name' : "Winter Wonderland",
+             'tbimage' : "thumbnails/winterwonderland4.jpg",
+             'image' : "images/winterwonderland4.jpg",
+             'description' : "Suspendisse potenti. Pellentesque vestibulum ullamcorper sapien vitae sodales. In in viverra leo. Quisque ultrices eros at lorem tristique condimentum. Praesent nulla lectus, accumsan eu rhoncus at, vestibulum eu diam. Suspendisse potenti. Pellentesque nec orci finibus, tempor leo ac, mattis odio. Aliquam quis orci maximus, euismod ex eget, dictum dui. Donec tristique, dui ac vehicula pellentesque, ipsum tellus viverra dui, egestas tincidunt nisi erat non metus. Praesent egestas dignissim consequat. Donec faucibus ex sit amet volutpat lobortis. Aliquam non purus fermentum, feugiat tortor et, sagittis lorem. ",
+             'year' : "2013"
             },
 
         ];
